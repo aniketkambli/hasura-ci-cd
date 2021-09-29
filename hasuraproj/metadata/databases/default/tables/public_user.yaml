@@ -1,3 +1,11 @@
 table:
   name: user
   schema: public
+array_relationships:
+- name: authors
+  using:
+    foreign_key_constraint_on:
+      column: user_id
+      table:
+        name: authors
+        schema: public
