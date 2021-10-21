@@ -1,0 +1,9 @@
+table:
+  name: user
+  schema: userschema
+insert_permissions:
+- permission:
+    backend_only: false
+    check: {}
+    columns: []
+  role: user
