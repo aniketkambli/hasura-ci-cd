@@ -1,0 +1,16 @@
+table:
+  name: user
+  schema: userschema
+insert_permissions:
+- permission:
+    backend_only: false
+    check: {}
+    columns: []
+  role: user
+select_permissions:
+- permission:
+    columns:
+    - userId
+    - name
+    filter: {}
+  role: user
