@@ -1,11 +1,15 @@
 table:
-  name: holiday
+  name: employee
   schema: userschema
 insert_permissions:
 - permission:
     backend_only: false
     check: {}
     columns:
-    - id
+    - age
     - name
+  role: user
+delete_permissions:
+- permission:
+    filter: {}
   role: user
