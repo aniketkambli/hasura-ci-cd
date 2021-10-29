@@ -1,0 +1,11 @@
+table:
+  name: emp
+  schema: usermanagmentdb
+insert_permissions:
+- permission:
+    backend_only: false
+    check: {}
+    columns:
+    - empid
+    - orgid
+  role: user

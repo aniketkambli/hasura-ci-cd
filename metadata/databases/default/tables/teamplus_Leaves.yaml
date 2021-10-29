@@ -1,0 +1,7 @@
+table:
+  name: Leaves
+  schema: teamplus
+object_relationships:
+- name: org
+  using:
+    foreign_key_constraint_on: orgid

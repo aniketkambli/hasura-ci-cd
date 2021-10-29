@@ -1,0 +1,11 @@
+table:
+  name: org
+  schema: usermanagmentdb
+array_relationships:
+- name: Leaves
+  using:
+    foreign_key_constraint_on:
+      column: orgid
+      table:
+        name: Leaves
+        schema: teamplus
