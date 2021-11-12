@@ -14,3 +14,11 @@ select_permissions:
     - name
     filter: {}
   role: user
+update_permissions:
+- permission:
+    check: null
+    columns:
+    - userId
+    - name
+    filter: {}
+  role: user
