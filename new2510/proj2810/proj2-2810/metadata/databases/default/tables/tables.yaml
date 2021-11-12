@@ -1,5 +1,4 @@
 - "!include userschema_employee.yaml"
 - "!include userschema_holiday.yaml"
 - "!include userschema_leaves.yaml"
-- "!include userschema_setting.yaml"
 - "!include userschema_user.yaml"
