@@ -1,0 +1,10 @@
+table:
+  name: holiday
+  schema: teamplus
+insert_permissions:
+- permission:
+    backend_only: false
+    check: {}
+    columns:
+    - holidayid
+  role: user
