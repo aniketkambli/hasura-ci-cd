@@ -1,0 +1,1 @@
+CREATE TABLE "usermanagmentdb"."org_emp" ("orgId" uuid NOT NULL, "empId" uuid NOT NULL, PRIMARY KEY ("orgId","empId") , FOREIGN KEY ("empId") REFERENCES "usermanagmentdb"."emp"("empid") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("orgId") REFERENCES "usermanagmentdb"."org"("orgid") ON UPDATE restrict ON DELETE restrict);
