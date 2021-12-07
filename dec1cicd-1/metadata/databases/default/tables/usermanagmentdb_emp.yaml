@@ -5,6 +5,14 @@ object_relationships:
 - name: org
   using:
     foreign_key_constraint_on: orgid
+array_relationships:
+- name: org_emps
+  using:
+    foreign_key_constraint_on:
+      column: empId
+      table:
+        name: org_emp
+        schema: usermanagmentdb
 insert_permissions:
 - permission:
     backend_only: false
