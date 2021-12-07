@@ -2,17 +2,17 @@ table:
   name: org_emp
   schema: usermanagmentdb
 object_relationships:
-  - name: emp
-    using:
-      foreign_key_constraint_on: empId
-  - name: org
-    using:
-      foreign_key_constraint_on: orgId
+- name: emp
+  using:
+    foreign_key_constraint_on: empId
+- name: org
+  using:
+    foreign_key_constraint_on: orgId
 insert_permissions:
-  - permission:
-      backend_only: false
-      check:
-        orgId:
-          _eq: X-Hasura-User-Id
-      columns: []
-    role: user
+- permission:
+    backend_only: false
+    check:
+      orgId:
+        _eq: X-Hasura-User-Id
+    columns: []
+  role: user
