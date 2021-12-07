@@ -1,0 +1,11 @@
+table:
+  name: org_emp
+  schema: usermanagmentdb
+insert_permissions:
+- permission:
+    backend_only: false
+    check:
+      orgId:
+        _eq: X-Hasura-User-Id
+    columns: []
+  role: user
